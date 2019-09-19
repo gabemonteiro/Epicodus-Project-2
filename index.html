@@ -15,6 +15,15 @@
           <label for="name">What's your first name?</label>
           <input id="name" class="form-control" type="text">
         <div class="form-group">
+          <label for="interests">What's your age range?</label>
+          <br>
+          <select class="form-group" name="age">
+            <option value="sub18">Under 18</option>
+            <option value="18to30">18-30</option>
+            <option value="30-50">30-50</option>
+            <option value="over50">Over 50</option>
+          </select>
+        <div class="form-group">
           <label for="interests">What aspect of the tech industry interests you?</label>
           <br>
           <select class="form-group" name="interests">
@@ -25,20 +34,25 @@
           </select>
           <div class=form-group>
             <label for="experience">Which language do you have some understanding of?</label>
+            <br>
             <div class="form-group">
               <label for="experience">
-                <input type="radio" name="html">HTML</label>
+                <input id="html" type="radio" name="experience">HTML</label>
                 <br>
               <label class="experience">
-                <input type="radio" name="javascript">Javascript</label>
+                <input id="javascript" type="radio" name="experience">Javascript</label>
                 <br>
               <label class="experience">
-                <input type="radio" name="python">Python</label>
+                <input id="python" type="radio" name="experience">Python</label>
                 <br>
               <label class="experience">
-                <input type="radio" name="ruby">Ruby</label>
+                <input id="ruby" type="radio" name="experience">Ruby</label>
+                <br>
+              <label class="experience">
+                <input id="noexp" type="radio" name="experience">None</label>
             </div>
           <br>
+
           <button type="submit" class="btn-primary">See your path!</button>
       </form>
     </div>
