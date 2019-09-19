@@ -18,19 +18,21 @@
           <label for="interests">What's your age range?</label>
           <br>
           <select class="form-group" name="age">
-            <option value="sub18">Under 18</option>
-            <option value="18to30">18-30</option>
-            <option value="30-50">30-50</option>
-            <option value="over50">Over 50</option>
+            <option id="select" value="">Select one:</option>
+            <option id="sub18" value="sub18">Under 18</option>
+            <option id="18to30" value="18to30">18-30</option>
+            <option id="30to50" value="30-50">30-50</option>
+            <option id="over50" value="over50">Over 50</option>
           </select>
         <div class="form-group">
           <label for="interests">What aspect of the tech industry interests you?</label>
           <br>
           <select class="form-group" name="interests">
-            <option value="web">Web</option>
-            <option value="mobile">Mobile</option>
-            <option value="apps">Apps / Software</option>
-            <option value="unk">Undecided</option>
+            <option id="select" value="">Select one:</option>
+            <option id="web" value="web">Web</option>
+            <option id="mobile" value="mobile">Mobile</option>
+            <option id="apps" value="apps">Apps / Software</option>
+            <option id="undecided" value="unk">Undecided</option>
           </select>
           <div class=form-group>
             <label for="experience">Which language do you have some understanding of?</label>
@@ -52,7 +54,17 @@
                 <input id="noexp" type="radio" name="experience">None</label>
             </div>
           <br>
-
+          <div class="form-group">
+            <label for="interests">Pick a color!</label>
+            <br>
+            <select class="form-group" name="color">
+              <option id="select" value="">Select one:</option>
+              <option id="redHtml" value="sub18">Red</option>
+              <option id="yellowJavascript" value="18to30">Yellow</option>
+              <option id="bluePython" value="30-50">Blue</option>
+              <option id="greenRuby" value="over50">Green</option>
+            </select>
+            <br>
           <button type="submit" class="btn-primary">See your path!</button>
       </form>
     </div>
