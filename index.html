@@ -15,24 +15,24 @@
           <label for="name">What's your first name?</label>
           <input id="name" class="form-control" type="text">
         <div class="form-group">
-          <label for="interests">What's your age range?</label>
+          <label for="age">What's your age range?</label>
           <br>
-          <select class="form-group" name="age">
-            <option id="select" value="0">Select one:</option>
-            <option id="sub18" value="1">Under 18</option>
-            <option id="18to30" value="2">18-30</option>
-            <option id="30to50" value="3">30-50</option>
-            <option id="over50" value="4">Over 50</option>
+          <select id="ageRange" class="form-group" name="age">
+            <option id="select" value="select">Select one:</option>
+            <option id="sub18" value="sub18">Under 18</option>
+            <option id="18to30" value="18to30">18-30</option>
+            <option id="30to50" value="30to50">30-50</option>
+            <option id="over50" value="over50">Over 50</option>
           </select>
         <div class="form-group">
           <label for="interests">What aspect of the tech industry interests you?</label>
           <br>
-          <select class="form-group" name="interests">
-            <option id="select" value="0">Select one:</option>
-            <option id="web" value="1">Web</option>
-            <option id="mobile" value="2">Mobile</option>
-            <option id="apps" value="3">Apps / Software</option>
-            <option id="undecided" value="4">Undecided</option>
+          <select id="interests" class="form-group" name="interests">
+            <option id="select" value="select">Select one:</option>
+            <option id="web" value="web">Web</option>
+            <option id="mobile" value="mobile">Mobile</option>
+            <option id="apps" value="apps">Apps / Software</option>
+            <option id="undecided" value="undecided">Undecided</option>
           </select>
           <div class=form-group>
             <label for="experience">Which language do you have some understanding of?</label>
@@ -58,11 +58,11 @@
             <label for="interests">Pick a color!</label>
             <br>
             <select class="form-group" name="color">
-              <option id="select" value="0">Select one:</option>
-              <option id="redHtml" value="1">Red</option>
-              <option id="yellowJavascript" value="2">Yellow</option>
-              <option id="bluePython" value="3">Blue</option>
-              <option id="greenRuby" value="4">Green</option>
+              <option id="select" value="select">Select one:</option>
+              <option id="redHtml" value="redHtml">Red</option>
+              <option id="yellowJavascript" value="yellowJavascript">Yellow</option>
+              <option id="bluePython" value="bluePython">Blue</option>
+              <option id="greenRuby" value="greenRuby">Green</option>
             </select>
             <br>
           <button type="submit" class="btn-primary">Find your path!</button>
@@ -83,7 +83,7 @@
             <h1>Your path should be Ruby</h1>
             <p><span class="name"></span>, based on your answers it seeems Ruby would be the right path for you!</p>
           </div>
-
+        </div>
       </form>
     </div>
   </body>
