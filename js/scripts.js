@@ -17,8 +17,9 @@ $(document).ready(function() {
   // Show old message if user is over 50
     if (age === "over50") {
       $("#old").toggleClass("hidden");
-      $("#old .name").text(name);
       $("#old h1").toggleClass(color);
+      $("#old .name").text(name);
+      $("#old .experience").text(experience);
       $("#quiz").hide();
     }
 // Show sponge message for user under 18
@@ -26,6 +27,7 @@ $(document).ready(function() {
       $("#resultsYoung").toggleClass("hidden");
       $("#resultsYoung h1").toggleClass(color);
       $("#resultsYoung .name").text(name);
+      $("#resultsYoung .experience").text(experience);
       $("#quiz").hide();
     }
 
