@@ -23,7 +23,10 @@ $(document).ready(function() {
       $("#quiz").hide();
     }
 // Show sponge message for user under 18
-    if (age === "sub18" && (interests === "web" || "mobile" || "apps" || "undecided")) {
+    if (age === "sub18" && (interests === "web"
+      || interests === "mobile"
+      || interests === "apps"
+      || interests === "undecided")) {
       $("#resultsYoung").toggleClass("hidden");
       $("#resultsYoung h1").toggleClass(color);
       $("#resultsYoung .name").text(name);

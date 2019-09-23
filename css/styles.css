@@ -2,6 +2,10 @@
   background-color: #ABABAB;
 }
 
+#container {
+  padding-top: 5%;
+}
+
 .hidden {
   display: none;
 }

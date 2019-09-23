@@ -8,13 +8,14 @@
     <script src="js/scripts.js"></script>
   </head>
   <body class="body">
-    <div class="container">
+    <div id="container" class="container">
       <div class="jumbotron">
         <h1>Programming Language Path Quiz</h1>
         <form id="quiz">
           <div class="form-group">
-            <label for="name">What's your first name?</label>
-            <input id="name" class="form-control" type="text">
+            <div class="input-group">
+              <input id="name" type="text" placeholder="First Name" class="form-control">
+            </div>
             <br>
             <label for="age">What's your age range?</label>
             <br>
@@ -62,7 +63,7 @@
               <label for="ruby-rb" class="experience">Ruby</label>
             </div>
             <div>
-              <input id="noexp" type="radio" name="experience">
+              <input id="noexp" type="radio" name="experience" value="inexperience">
               <label class="experience">None</label>
             </div>
             <!-- Radio Buttons End -->
