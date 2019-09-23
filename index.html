@@ -14,77 +14,89 @@
         <div class="form-group">
           <label for="name">What's your first name?</label>
           <input id="name" class="form-control" type="text">
-        <div class="form-group">
           <label for="age">What's your age range?</label>
           <br>
           <select id="ageRange" class="form-group" name="age">
-            <option id="select" value="select">Select one:</option>
+            <option id="select" value="unselected">Select one:</option>
             <option id="sub18" value="sub18">Under 18</option>
             <option id="18to30" value="18to30">18-30</option>
-            <option id="30to50" value="30to50">30-50</option>
+            <option id="30to50" value="31to50">31-50</option>
             <option id="over50" value="over50">Over 50</option>
           </select>
+        </div>
+
         <div class="form-group">
           <label for="interests">What aspect of the tech industry interests you?</label>
           <br>
           <select id="interests" class="form-group" name="interests">
-            <option id="select" value="select">Select one:</option>
+            <option id="select" value="unselected">Select one:</option>
             <option id="web" value="web">Web</option>
             <option id="mobile" value="mobile">Mobile</option>
             <option id="apps" value="apps">Apps / Software</option>
             <option id="undecided" value="undecided">Undecided</option>
           </select>
-          <div class=form-group>
-            <label for="experience">Which language do you have some understanding of?</label>
-            <br>
-            <div class="form-group">
-              <label for="experience">
-                <input id="html" type="radio" name="experience">HTML</label>
-                <br>
-              <label class="experience">
-                <input id="javascript" type="radio" name="experience">Javascript</label>
-                <br>
-              <label class="experience">
-                <input id="python" type="radio" name="experience">Python</label>
-                <br>
-              <label class="experience">
-                <input id="ruby" type="radio" name="experience">Ruby</label>
-                <br>
-              <label class="experience">
-                <input id="noexp" type="radio" name="experience">None</label>
-            </div>
-          <br>
-          <div class="form-group">
-            <label for="interests">Pick a color!</label>
-            <br>
-            <select class="form-group" name="color">
-              <option id="select" value="select">Select one:</option>
-              <option id="redHtml" value="redHtml">Red</option>
-              <option id="yellowJavascript" value="yellowJavascript">Yellow</option>
-              <option id="bluePython" value="bluePython">Blue</option>
-              <option id="greenRuby" value="greenRuby">Green</option>
-            </select>
-            <br>
-          <button type="submit" class="btn-primary">Find your path!</button>
-
-          <div id="resultsHtml">
-            <h1>Your path should be HTML</h1>
-            <p><span class="name"></span>, based on your answers it seeems HTML would be the right path for you!</p>
-          </div>
-          <div id="resultsJavascript">
-            <h1>Your path should be JavaScript</h1>
-            <p><span class="name"></span>, based on your answers it seeems JavaScript would be the right path for you!</p>
-          </div>
-          <div id="resultsPython">
-            <h1>Your path should be bluePython</h1>
-            <p><span class="name"></span>, based on your answers it seeems Python would be the right path for you!</p>
-          </div>
-          <div id="resultsRuby">
-            <h1>Your path should be Ruby</h1>
-            <p><span class="name"></span>, based on your answers it seeems Ruby would be the right path for you!</p>
-          </div>
         </div>
+
+        <div class=form-group>
+          <label for="experience">Which language do you have some understanding of?</label>
+          <br>
+          <label for="experience">
+            <input id="html" type="radio" name="experience">HTML</label>
+          <br>
+          <label class="experience">
+            <input id="javascript" type="radio" name="experience">Javascript</label>
+          <br>
+          <label class="experience">
+            <input id="python" type="radio" name="experience">Python</label>
+          <br>
+          <label class="experience">
+            <input id="ruby" type="radio" name="experience">Ruby</label>
+          <br>
+          <label class="experience">
+          <input id="noexp" type="radio" name="experience">None</label>
+        </div>
+          <br>
+
+        <div class="form-group">
+          <label for="interests">Pick a color!</label>
+          <br>
+          <select id="color-select" class="form-group" name="color">
+            <option id="select" value="unselected">Select one:</option>
+            <option id="red" value="red">Red</option>
+            <option id="yellow" value="yellow">Yellow</option>
+            <option id="blue" value="blue">Blue</option>
+            <option id="green" value="green">Green</option>
+          </select>
+          <br>
+        <button type="submit" class="btn-primary">Find your path!</button>
+       </div>
       </form>
     </div>
+
+    <div id="resultsYoung" class="hidden">
+      <h1>YOU HAVE A BRAIN LIKE A SPONGE!</h1>
+      <p><span class="name"></span>, based on your answers start with HTML and learn as much as you can as you progress with your skills!</p>
+    </div>
+    <div id="resultsHtml" class="hidden">
+      <h1>Your path should be HTML</h1>
+      <p><span class="name"></span>, based on your answers it seeems HTML would be the right path for you!</p>
+    </div>
+    <div id="resultsJavascript" class="hidden">
+      <h1>Your path should be JavaScript</h1>
+      <p><span class="name"></span>, based on your answers it seeems JavaScript would be the right path for you!</p>
+    </div>
+    <div id="resultsPython" class="hidden">
+      <h1>Your path should be bluePython</h1>
+      <p><span class="name"></span>, based on your answers it seeems Python would be the right path for you!</p>
+    </div>
+    <div id="resultsRuby" class="hidden">
+      <h1>Your path should be Ruby</h1>
+      <p><span class="name"></span>, based on your answers it seeems Ruby would be the right path for you!</p>
+    </div>
+    <div id="old" class="hidden">
+      <h1>Damn you old</h1>
+      <p><span class="name"></span>, based on your answers it seeems retirement would be the right path for you!</p>
+    </div>
+
   </body>
 </html>

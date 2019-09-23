@@ -1,12 +1,11 @@
 $(document).ready(function() {
-  $("form#quiz").submit(function() {
-    event.preventDefault();
+  $("button").click(function(event) {
+
     var name = $("input#name").val();
+    var age = $('#ageRange').val();
+    var interests = $('#interests').val();
+    var color = $('#color-select').val();
 
-    var age = document.getElementById('ageRange')
-    var interests = document.getElementById('interests')
-    var age = document.getElementById('ageRange')
-
-    $(".name").text(name);
-
-    $("#result").show();
+    event.preventDefault()
+  });
+});
