@@ -34,6 +34,7 @@ $(document).ready(function() {
       $("#resultsHtml").toggleClass("hidden");
       $("#resultsHtml h1").toggleClass(color);
       $("#resultsHtml .name").text(name);
+      $("#resultsHtml .experience").text(experience);
       $("#quiz").hide();
     }
 
@@ -42,22 +43,34 @@ $(document).ready(function() {
       $("#resultsJavascript").toggleClass("hidden");
       $("#resultsJavascript h1").toggleClass(color);
       $("#resultsJavascript .name").text(name);
+      $("#resultsJavascript .experience").text(experience);
+      $("#quiz").hide();
+    }
+
+// 18 to 30 - Will display Ruby based on interests
+    if (age === "18to30" && (interests === "mobile")) {
+      $("#resultsRuby").toggleClass("hidden");
+      $("#resultsRuby h1").toggleClass(color);
+      $("#resultsRuby .name").text(name);
+      $("#resultsRuby .experience").text(experience);
       $("#quiz").hide();
     }
 
 // 18 to 30 - Will display Python based on interests
     if (age === "18to30" && (interests === "mobile")) {
-      $("#resultsRuby").toggleClass("hidden");
-      $("#resultsRuby h1").toggleClass(color);
-      $("#resultsRuby .name").text(name);
+      $("#resultsPython").toggleClass("hidden");
+      $("#resultsPython h1").toggleClass(color);
+      $("#resultsPython .name").text(name);
+      $("#resultsPython .experience").text(experience);
       $("#quiz").hide();
     }
 
 // 30 to 50 - Will display HTML based on interests
-    if (age === "30to50" &&  (interests === "web" || "undecided")) {
+    if (age === "30to50" && (interests === "web" || interests === "undecided")) {
       $("#resultsHtml").toggleClass("hidden");
       $("#resultsHtml h1").toggleClass(color);
       $("#resultsHtml .name").text(name);
+      $("#resultsHtml .experience").text(experience);
       $("#quiz").hide();
     }
 
@@ -66,16 +79,28 @@ $(document).ready(function() {
       $("#resultsJavascript").toggleClass("hidden");
       $("#resultsJavascript h1").toggleClass(color);
       $("#resultsJavascript .name").text(name);
+      $("#resultsJavascript .experience").text(experience);
+      $("#quiz").hide();
+    }
+
+// 30 to 50 - Will display Ruby based on interests
+    if (age === "30to50" && (interests === "mobile")) {
+      $("#resultsRuby").toggleClass("hidden");
+      $("#resultsRuby h1").toggleClass(color);
+      $("#resultsRuby .name").text(name);
+      $("#resultsRuby .experience").text(experience);
       $("#quiz").hide();
     }
 
 // 30 to 50 - Will display Python based on interests
-  if (age === "30to50" && (interests === "mobile")) {
-    $("#resultsRuby").toggleClass("hidden");
-    $("#resultsRuby h1").toggleClass(color);
-    $("#resultsRuby .name").text(name);
-    $("#quiz").hide();
-   }
+    if (age === "30to50" && (interests === "mobile")) {
+      $("#resultsPython").toggleClass("hidden");
+      $("#resultsPython h1").toggleClass(color);
+      $("#resultsPython .name").text(name);
+      $("#resultsPython .experience").text(experience);
+      $("#quiz").hide();
+    }
+
     event.preventDefault()
   });
 });
