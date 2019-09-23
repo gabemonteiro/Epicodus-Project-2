@@ -57,7 +57,7 @@ $(document).ready(function() {
     }
 
 // 18 to 30 - Will display Python based on interests
-    if (age === "18to30" && (interests === "mobile")) {
+    if (age === "18to30" && (interests === "data")) {
       $("#resultsPython").toggleClass("hidden");
       $("#resultsPython h1").toggleClass(color);
       $("#resultsPython .name").text(name);
@@ -93,7 +93,7 @@ $(document).ready(function() {
     }
 
 // 30 to 50 - Will display Python based on interests
-    if (age === "30to50" && (interests === "mobile")) {
+    if (age === "30to50" && (interests === "data")) {
       $("#resultsPython").toggleClass("hidden");
       $("#resultsPython h1").toggleClass(color);
       $("#resultsPython .name").text(name);
